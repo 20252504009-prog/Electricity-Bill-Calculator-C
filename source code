@@ -113,7 +113,7 @@ int main()
         char name[50];
         do{
         printf("ENTER THE SERIAL NUMBER OF OPERATION YOU WANT TO ATTEND IN ACCOUNT\n");
-        printf("1.I WANT TO ADD AN ACCOUNT\n2.I WANT TO VIEW AN ACCOUNT\n.3.I WANT TO UPDATE AN ACCOUNT\n4.I WANT TO VIEW BILL OF AN ACCOUNT\n5.I WANTTO DELETE AN ACCOUNT\n");
+        printf("1.I WANT TO ADD AN ACCOUNT\n2.I WANT TO VIEW AN ACCOUNT\n.3.I WANT TO UPDATE AN ACCOUNT\n4.I WANT TO VIEW BILL OF AN ACCOUNT\n5.I WANTTO DELETE AN ACCOUNT\n6.EXIT THE PROGRAM\n");
         scanf("%d",&options);
         if(options==1)
         {
@@ -154,3 +154,4 @@ int main()
 
 return 0;
 }
+
