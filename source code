@@ -1,5 +1,9 @@
+//ELECTRICITY BILL CALCULATOR
+//AUTHOR:BHAKKTI GAUTAM
+//DESCRIPTION:A menu-driven Electricity Billing System written in C using structures. The project allows adding, viewing, updating, deleting customer accounts and generating electricity bills based on units consumed.
 #include<stdio.h>
 #include<string.h>
+//STRUCTURE TO STORE CUSTOMER DETAILS
 struct customer{
         char name[50];
         char mobilenumber[15];
@@ -9,7 +13,7 @@ struct customer{
 struct customer
         customer[100];
         int customercount=0;
-
+//FUNCTION TO ADD A NEW ACCOUNT
 void addaccount()
 {
         if(customercount<100)
@@ -29,6 +33,7 @@ void addaccount()
                 printf("THE NUMBER OF ACCOUNT REACHED MAXIMUM LIMIT");
         }
 }
+//FUNCTION TO VIEW ACCOUNTS
 void viewaccounts()
 {
         printf("\nNAME\tMOBILE NUMBER\tUNITS CONSUMED\tBILL");
@@ -40,6 +45,7 @@ void viewaccounts()
                 printf("\t%d\n",customer[i].bill);
         }
 }
+//FUNCTION TO UPDATE AN ACCOUNT
 void updateaccount(char name[])
 {
         int found=0;
@@ -64,6 +70,7 @@ void updateaccount(char name[])
         }
 
 }
+//FUNCTION TO VIEW BILL OF PARTICULAR ACCOUNT
 void viewbill(char name[])
 {
         int found=0;
@@ -84,6 +91,7 @@ void viewbill(char name[])
         }
 
 }
+//FUNCTION TO DELETE AN ACCOUNT
 void deleteaccount(char name[])
 {
         int i,k,found=0;
@@ -107,6 +115,7 @@ void deleteaccount(char name[])
                 printf("\nACCOUNT NOT FOUND");
         }
 }
+//Main function with menu-driven program
 int main()
 {
         int options;
@@ -152,6 +161,7 @@ int main()
         }
         }while(options!=6);
 
-return 0;
+return 0;//END OF PROGRAM
 }
+
 
